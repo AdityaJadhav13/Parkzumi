@@ -1,0 +1,3 @@
+#include "Generated.xcconfig"
+// Optional, git-ignored: Measure credentials (see ios/Flutter/Secrets.example.xcconfig).
+#include? "Secrets.xcconfig"

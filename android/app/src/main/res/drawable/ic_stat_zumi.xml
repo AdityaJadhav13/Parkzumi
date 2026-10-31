@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Monochrome Zumi head silhouette for the status bar. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M27,54 L31,17 L54,35 L66,35 L80,24 L82,30 L86,21 L89,17 L93,54 C99,59 102,65 102,71 C102,94 84,106 60,106 C36,106 18,94 18,71 C18,65 21,59 27,54 Z"/>
+</vector>

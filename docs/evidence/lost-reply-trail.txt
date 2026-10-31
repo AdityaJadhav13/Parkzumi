@@ -1,0 +1,13 @@
+# Event trail: lost reply → offline → retry → deduplicated (Android emulator, journey test, 31 Oct 2026)
+# correlation id: tip-hnq02a96u2-m1idkhyr — exported from the app's structured event log (no photos, notes or coordinates)
+app outbox.recovered {"resetInFlight":0,"pending":0}
+app tip.queued tip-hnq02a96u2-m1idkhyr {"spotId":"bank-compound","ops":["op-hnq02a974b-jduy0mp4"],"withPhoto":false}
+app outbox.attempt tip-hnq02a96u2-m1idkhyr {"opId":"op-hnq02a974b-jduy0mp4","kind":"submitTip","attempt":1}
+server server.tip_committed tip-hnq02a96u2-m1idkhyr {"opId":"op-hnq02a974b-jduy0mp4"}
+network network.response_lost tip-hnq02a96u2-m1idkhyr {"endpoint":"submitTip"}
+app outbox.retry_scheduled tip-hnq02a96u2-m1idkhyr {"opId":"op-hnq02a974b-jduy0mp4","error":"timeout","attempt":1,"retryInS":2}
+app outbox.attempt tip-hnq02a96u2-m1idkhyr {"opId":"op-hnq02a974b-jduy0mp4","kind":"submitTip","attempt":2}
+server server.duplicate_ignored tip-hnq02a96u2-m1idkhyr {"opId":"op-hnq02a974b-jduy0mp4"}
+app outbox.acked tip-hnq02a96u2-m1idkhyr {"opId":"op-hnq02a974b-jduy0mp4","kind":"submitTip","deduplicated":true,"ms":372}
+server server.tip_reviewed tip-hnq02a96u2-m1idkhyr {"status":"accepted"}
+app tip.status_changed tip-hnq02a96u2-m1idkhyr {"from":"received","to":"accepted"}

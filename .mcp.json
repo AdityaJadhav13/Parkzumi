@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dart": { "command": "dart", "args": ["mcp-server"] },
+    "XcodeBuildMCP": { "command": "npx", "args": ["-y", "xcodebuildmcp@2.7.0"] },
+    "mobile-mcp": {
+      "command": "npx",
+      "args": ["-y", "@mobilenext/mobile-mcp@1.0.15"],
+      "env": { "ANDROID_HOME": "${HOME}/Library/Android/sdk" }
+    },
+    "apple-docs": { "command": "npx", "args": ["-y", "@kimsungwhee/apple-docs-mcp@1.0.26"] }
+  }
+}

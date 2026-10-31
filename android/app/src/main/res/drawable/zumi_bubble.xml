@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Zumi head on an ink disc, for the floating companion bubble. Paths mirror assets/brand/zumi_head.svg. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path android:fillColor="#171917" android:pathData="M60,2a58,58 0,1 0,0.1 0z"/>
+    <group android:scaleX="0.82" android:scaleY="0.82" android:pivotX="60" android:pivotY="62">
+        <path android:fillColor="#C5FF45" android:strokeColor="#F5F4EE" android:strokeWidth="5" android:strokeLineJoin="round"
+            android:pathData="M27,54 L31,17 L54,35 Z"/>
+        <path android:fillColor="#C5FF45" android:strokeColor="#F5F4EE" android:strokeWidth="5" android:strokeLineJoin="round"
+            android:pathData="M66,35 L80,24 L82,30 L86,21 L89,17 L93,54 Z"/>
+        <path android:fillColor="#C5FF45" android:strokeColor="#F5F4EE" android:strokeWidth="5" android:strokeLineJoin="round"
+            android:pathData="M18,71 C18,44 38,32 60,32 C82,32 102,44 102,71 C102,94 84,106 60,106 C36,106 18,94 18,71 Z"/>
+        <path android:fillColor="#F5F4EE" android:strokeColor="#171917" android:strokeWidth="4" android:strokeLineJoin="round"
+            android:pathData="M35,67 Q46,57 57,67 Q46,74 35,67 Z"/>
+        <path android:fillColor="#F5F4EE" android:strokeColor="#171917" android:strokeWidth="4" android:strokeLineJoin="round"
+            android:pathData="M63,67 Q74,57 85,67 Q74,74 63,67 Z"/>
+        <path android:fillColor="#171917" android:pathData="M46.8,67a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0z"/>
+        <path android:fillColor="#171917" android:pathData="M74.8,67a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0z"/>
+        <path android:fillColor="#171917" android:pathData="M55.5,80 L64.5,80 L60,85.5 Z"/>
+    </group>
+</vector>
